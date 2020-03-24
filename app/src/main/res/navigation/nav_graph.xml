@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstScreen"
+    tools:ignore="UnusedNavigation">
+
+    <view
+        android:id="@+id/firstScreen"
+        android:name="dev.sasikanth.navigator.views.FirstScreen"
+        android:label="FirstScreen"
+        app:layout="@layout/first_screen"
+        tools:layout="@layout/first_screen">
+        <action
+            android:id="@+id/action_firstScreen_to_secondScreen"
+            app:destination="@id/secondScreen" />
+    </view>
+    <view
+        android:id="@+id/secondScreen"
+        android:name="dev.sasikanth.navigator.views.SecondScreen"
+        android:label="SecondScreen"
+        app:layout="@layout/second_screen"
+        tools:layout="@layout/second_screen" />
+</navigation>
